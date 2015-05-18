@@ -1,16 +1,12 @@
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
+# Inherit device specific files
+$(call inherit-product, device/samsung/gio/device_gio.mk)
 
-# Inherit device configuration
-$(call inherit-product, device/samsung/gio/full_gio.mk)
-
-# Inherit some common CM stuff.
-TARGET_SCREEN_HEIGHT := 480
-TARGET_SCREEN_WIDTH := 320
-$(call inherit-product, vendor/cm/config/mini.mk)
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Overrides
-PRODUCT_NAME := cm_gio
+PRODUCT_NAME := omni_gio
 PRODUCT_DEVICE := gio
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := GT-S5660
