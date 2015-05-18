@@ -1,7 +1,7 @@
 android_device_samsung_gio
 ==========================
 
-Device Config for Galaxy Gio 
+Device Config for Galaxy Gio GT-S5660
 
 Getting Started
 ---------------
