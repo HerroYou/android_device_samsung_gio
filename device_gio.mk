@@ -18,6 +18,9 @@
 ## Build the 3.0.x Kernel
 #BUILD_WITH_30X_KERNEL := false
 
+## Build the ath6kl-compat driver
+BOARD_WLAN_DEVICE := ath6kl_compat
+
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/gio/ramdisk/GIO.rle:root/GIO.rle
